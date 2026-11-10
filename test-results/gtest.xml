@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="50" failures="0" disabled="0" errors="0" time="0.05" timestamp="2026-11-10T00:26:04.554" name="AllTests">
+  <testsuite name="Sha1" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0.023" timestamp="2026-11-10T00:26:04.554">
+    <testcase name="StandardVectors" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="7" status="run" result="completed" time="0.023" timestamp="2026-11-10T00:26:04.554" classname="Sha1" />
+    <testcase name="RawIdRoundTrip" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="14" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Sha1" />
+  </testsuite>
+  <testsuite name="Objects" tests="8" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2026-11-10T00:26:04.578">
+    <testcase name="GitKnownIds" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="21" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="BinaryBlobRoundTrip" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="26" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="TreesAreCanonicalAndNested" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="32" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="InvalidTreeEntries" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="41" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="RejectsExcessivePathDepth" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="48" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="CommitRoundTrip" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="55" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="InvalidCommitFields" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="67" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+    <testcase name="RejectMalformedEncoding" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="72" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Objects" />
+  </testsuite>
+  <testsuite name="Sandbox" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2026-11-10T00:26:04.578">
+    <testcase name="StoreDeduplicatesAndDetectsCorruption" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="79" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.578" classname="Sandbox" />
+    <testcase name="StoreRejectsInvalidAndMissingIds" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="90" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.579" classname="Sandbox" />
+    <testcase name="WriterLockIsExclusiveAndReleased" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="95" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.579" classname="Sandbox" />
+  </testsuite>
+  <testsuite name="Diff" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-10T00:26:04.579">
+    <testcase name="EmptyAndIdentical" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="103" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.579" classname="Diff" />
+    <testcase name="InsertDeleteAndReplace" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="110" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.579" classname="Diff" />
+    <testcase name="NewlineAndBinaryHandling" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="120" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.579" classname="Diff" />
+    <testcase name="RefusesExcessiveMatrix" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="128" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.579" classname="Diff" />
+    <testcase name="RandomScriptsReconstructBothInputsAndAreMinimal" file="/workspace/scratch/016879abd8cf/minigit/tests/core_test.cpp" line="134" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.580" classname="Diff" />
+  </testsuite>
+  <testsuite name="RepoTest" tests="26" failures="0" disabled="0" skipped="0" errors="0" time="0.02" timestamp="2026-11-10T00:26:04.581">
+    <testcase name="InitAndDiscover" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="20" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.581" classname="RepoTest" />
+    <testcase name="StagedBytesAreIndependentOfWorkingCopy" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="29" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.581" classname="RepoTest" />
+    <testcase name="NestedTreesAndBinaryFilesSurviveReopen" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="41" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.581" classname="RepoTest" />
+    <testcase name="CommitHistoryAndNoOpRejection" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="55" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.582" classname="RepoTest" />
+    <testcase name="EmptyInitialCommit" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="68" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.583" classname="RepoTest" />
+    <testcase name="AddDirectoryStagesDeletionsAndSkipsMetadata" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="74" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.584" classname="RepoTest" />
+    <testcase name="MissingTrackedFileCanBeStaged" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="88" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.585" classname="RepoTest" />
+    <testcase name="RemoveKeepsWorkingCopy" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="98" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.586" classname="RepoTest" />
+    <testcase name="BatchAddFailureKeepsIndex" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="108" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.587" classname="RepoTest" />
+    <testcase name="BatchRemoveFailureKeepsIndex" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="115" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.587" classname="RepoTest" />
+    <testcase name="RejectsOutsideAndMetadataPaths" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="121" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.587" classname="RepoTest" />
+    <testcase name="BranchesDivergeAndCheckoutRestoresFiles" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="127" status="run" result="completed" time="0.002" timestamp="2026-11-10T00:26:04.588" classname="RepoTest" />
+    <testcase name="CheckoutRejectsDirtyTrackedFiles" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="148" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.590" classname="RepoTest" />
+    <testcase name="CheckoutRejectsStagedChanges" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="157" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.590" classname="RepoTest" />
+    <testcase name="CheckoutRejectsUntrackedCollisionsBeforeAnyWrites" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="165" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.591" classname="RepoTest" />
+    <testcase name="CheckoutRejectsUntrackedAncestor" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="180" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.593" classname="RepoTest" />
+    <testcase name="CheckoutHandlesFileDirectoryTransitions" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="191" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.594" classname="RepoTest" />
+    <testcase name="CheckoutPreflightsUntrackedEmptyDirectory" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="205" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.596" classname="RepoTest" />
+    <testcase name="BranchValidationAndUnbornHead" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="220" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.597" classname="RepoTest" />
+    <testcase name="DiffModesUseCorrectSnapshots" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="229" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.598" classname="RepoTest" />
+    <testcase name="DiffOmitsUntrackedFiles" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="240" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.599" classname="RepoTest" />
+    <testcase name="CorruptIndexIsRejected" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="244" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.599" classname="RepoTest" />
+    <testcase name="TruncatedIndexIsRejected" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="248" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.599" classname="RepoTest" />
+    <testcase name="CorruptTargetDoesNotChangeWorkingFiles" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="255" status="run" result="completed" time="0.001" timestamp="2026-11-10T00:26:04.599" classname="RepoTest" />
+    <testcase name="LockBlocksMutation" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="270" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.601" classname="RepoTest" />
+    <testcase name="SymlinkCannotEscapeRepository" file="/workspace/scratch/016879abd8cf/minigit/tests/repository_test.cpp" line="276" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.601" classname="RepoTest" />
+  </testsuite>
+  <testsuite name="CliTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0.003" timestamp="2026-11-10T00:26:04.601">
+    <testcase name="HelpAndUnknownCommand" file="/workspace/scratch/016879abd8cf/minigit/tests/command_test.cpp" line="17" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.601" classname="CliTest" />
+    <testcase name="FactoryCreatesPolymorphicCommands" file="/workspace/scratch/016879abd8cf/minigit/tests/command_test.cpp" line="24" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.601" classname="CliTest" />
+    <testcase name="CompleteWorkflow" file="/workspace/scratch/016879abd8cf/minigit/tests/command_test.cpp" line="30" status="run" result="completed" time="0.002" timestamp="2026-11-10T00:26:04.601" classname="CliTest" />
+    <testcase name="AddFromSubdirectory" file="/workspace/scratch/016879abd8cf/minigit/tests/command_test.cpp" line="53" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.604" classname="CliTest" />
+    <testcase name="InvalidArgumentsReturnErrors" file="/workspace/scratch/016879abd8cf/minigit/tests/command_test.cpp" line="62" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.604" classname="CliTest" />
+    <testcase name="HashAndInspectObjects" file="/workspace/scratch/016879abd8cf/minigit/tests/command_test.cpp" line="74" status="run" result="completed" time="0" timestamp="2026-11-10T00:26:04.604" classname="CliTest" />
+  </testsuite>
+</testsuites>

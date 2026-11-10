@@ -1,0 +1,1 @@
+PASS: 9 blob vectors and 12 stored objects match Git: {'commit': 1, 'tree': 2, 'blob': 9}
